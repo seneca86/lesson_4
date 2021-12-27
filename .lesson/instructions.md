@@ -159,5 +159,24 @@ A (traditional) **assignment statement** is a statement in which we assign a val
 An **assignment expression** is similar to an **assignment statement** but it also returns the value. This subtle difference enables several simplifications in loops and in conditional statements such as the following:
 
 ```python
-
+dooms_year = 2100
+current_year = 2022
+buffer = dooms_year - current_year
+if buffer > 50:
+    print(f'we can still live for {buffer} years')
+else:
+    print(f'run away')
 ```
+
+We can compress the assignment and the expression in the `if` into an assignment expression:
+
+```python
+dooms_year = 2100
+current_year = 2022
+if (buffer := dooms_year - current_year) > 50:
+    print(f'we can still live for {buffer} years')
+else:
+    print(f'run away')
+```
+
+Note that we want `buffer` to retain the value that we evaluate in the `if`, so that we can use it in the `print()` statement later on.

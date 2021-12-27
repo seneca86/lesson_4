@@ -84,3 +84,18 @@ beatles = 'John', 'Paul', 'George', 'Ringo'
 name in beatles 
 
 # %%
+dooms_year = 2100
+current_year = 2022
+buffer = dooms_year - current_year
+if buffer > 50:
+    print(f'we can still live for {buffer} years')
+else:
+    print(f'run away')
+# %%
+dooms_year = 2100
+current_year = 2022
+if (buffer := dooms_year - current_year) > 50:
+    print(f'we can still live for {buffer} years')
+else:
+    print(f'run away')
+# %%
