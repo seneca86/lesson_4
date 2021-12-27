@@ -67,3 +67,71 @@ else:
 
 Note the absence of curly brackets and parenthesis, and the importance of the indentation, which is recommended to consist of four spaces.
 
+Indentation goes into deeper levels when we write embedded clauses:
+
+```python
+clouds = False
+cold = False
+
+if clouds:
+    if cold:
+        print('winter')
+    else:
+        print('summer')
+else:
+    if cold:
+        print('spring')
+    else:
+        print('summer')
+```
+
+We can think of this chunk of code as a three-step process: assigning a value to two booleans, then performing a conditional comparison, then calling the `print()` statement. The important thing is that indentation determines how the `if` and `else` sections are paired.
+
+When we need to discern among more than two cases, we will use the `elif` clause, which is a shortcut for `else` plus `if`.
+
+```python
+day = 'Monday'
+if day == 'Monday':
+    print('first')
+elif day == 'Tuesday':
+    print('second')
+elif day == 'Wednesday':
+    print('third')
+elif day == 'Thursday':
+    print('fourth')
+elif day == 'Friday':
+    print('fifth')
+elif day == 'Saturday':
+    print('sixth')
+elif day == 'Sunday':
+    print('seventh')
+```
+
+Besides `==`, there are other _comparison operators_:
+
+| Operator | Symbol |
+|----------|--------|
+| equality | `==`|
+| inequality | `!=`|
+| less than | `<`|
+| less than or equal to |`<=`|
+| greater than | `>`|
+| greater than or equal to |`>=`|
+
+Additionally, the logical operators `or`, `not`, `and` allow us to make multiple comparisons simultaneously.
+
+```python
+x = 3
+5 > x
+x == 4
+x < 10
+(x < 10) and (x <  20)
+(x < 10) and not (x == 4)
+(x < 10) or (x > 10)
+1 < x < 10
+1 < x < 10 < 20
+```
+
+In the last two lines, note how Python allows us to compress multiple comparison in a concise way.
+
+

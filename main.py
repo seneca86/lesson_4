@@ -38,3 +38,44 @@ if bull_market:
 else:
     print('sell')
 # %%
+clouds = False
+cold = False
+
+if clouds:
+    if cold:
+        print('winter')
+    else:
+        print('summer')
+else:
+    if cold:
+        print('spring')
+    else:
+        print('summer')
+# %%
+day = 'Monday'
+if day == 'Monday':
+    print('first')
+elif day == 'Tuesday':
+    print('second')
+elif day == 'Wednesday':
+    print('third')
+elif day == 'Thursday':
+    print('fourth')
+elif day == 'Friday':
+    print('fifth')
+elif day == 'Saturday':
+    print('sixth')
+elif day == 'Sunday':
+    print('seventh')
+   
+# %%
+x = 3
+5 > x
+x == 4
+x < 10
+(x < 10) and (x <  20)
+(x < 10) and not (x == 4)
+(x < 10) or (x > 10)
+1 < x < 10
+1 < x < 10 < 20
+# %%
