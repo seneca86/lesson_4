@@ -79,3 +79,8 @@ x < 10
 1 < x < 10
 1 < x < 10 < 20
 # %%
+name = 'Bob'
+beatles = 'John', 'Paul', 'George', 'Ringo'
+name in beatles 
+
+# %%

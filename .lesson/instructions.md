@@ -134,4 +134,30 @@ x < 10
 
 In the last two lines, note how Python allows us to compress multiple comparison in a concise way.
 
+## Conventions about `True`
 
+Python can evaluate the "truthiness" of a variable even if it is not a boolean. In general, a variable that exists and is not zero or empty will be `True`. More precisely, everything is `True` except for `False`, `None`, `0`, `0.0`, `''`, `{}`, `[]`, `{}`, and `set()`.
+
+## Multiple comparisons with `in`
+
+When we want to check whether a value belongs to a set of values, `if` clauses can involve a lot or `or`s and get long. The `in` membership operator is useful for these situations.
+
+```python
+name = 'Bob'
+beatles = 'John', 'Paul', 'George', 'Ringo'
+name in beatles 
+```
+
+Note how easy it is to check whether the value is one of those listed. But, what type of variable is the one we just used? It is a `tuple` and we will come back to it given its importance. `tuple`'s are typically enclosed by parenthesis, but they can be omitted as in the example.
+
+## Assignment expressions with the walrus operator
+
+The walrus operator is the funny name for `:=`, which looks like a walrus sideways. It was introduced recently in Python, although it existed in other programming languages. It is useful for assignment expressions and we will revisit it later.
+
+A (traditional) **assignment statement** is a statement in which we assign a value to an object, e.g. `a = 1 + 1`. An **expression** is a special statement that can be evaluated to some value, like `1 + 1`.
+
+An **assignment expression** is similar to an **assignment statement** but it also returns the value. This subtle difference enables several simplifications in loops and in conditional statements such as the following:
+
+```python
+
+```
