@@ -28,3 +28,42 @@ double quotes
 
 ## Line continuations
 
+The recommended maximum length of a line in 80 characters. When we need to write lines longer than that we can use the `\` continuation character. For instance:
+
+```python
+sum = 1 + \
+      2 + \
+      3 + \
+      4 + \
+      5
+long_poem = 'Animula, vagula, blandula \
+    Hospes comesque corporis \
+    Quae nunc abibis in loca \
+    Pallidula, rigida, nudula, \
+    Nec, ut soles, dabis iocos'
+```
+
+A trick that we will use is to use parenthesis smartly to avoid the need for explicitly invoking the `\`:
+
+```python
+sum = (1 +
+       2 +
+       3 +
+       4 +
+       5)
+```
+
+## `if`, `elif`, `else`
+
+We can write our first conditional statement in Python to check the value of a boolean:
+
+```python
+bull_market = True
+if bull_market:
+    print('hold')
+else:
+    print('sell')
+```
+
+Note the absence of curly brackets and parenthesis, and the importance of the indentation, which is recommended to consist of four spaces.
+

@@ -13,4 +13,28 @@ double quotes
 a = 4
 
 # %%
-# Test
+# Line continuations
+sum = 1 + \
+      2 + \
+      3 + \
+      4 + \
+      5
+# %%
+long_poem = 'Animula, vagula, blandula \
+    Hospes comesque corporis \
+    Quae nunc abibis in loca \
+    Pallidula, rigida, nudula, \
+    Nec, ut soles, dabis iocos'
+# %%
+sum = (1 +
+       2 +
+       3 +
+       4 +
+       5)
+# %%
+bull_market = True
+if bull_market:
+    print('hold')
+else:
+    print('sell')
+# %%
