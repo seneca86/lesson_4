@@ -45,7 +45,7 @@ if clouds:
     if cold:
         print('winter')
     else:
-        print('summer')
+        print('fall')
 else:
     if cold:
         print('spring')
